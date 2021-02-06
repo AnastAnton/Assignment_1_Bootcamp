@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/backround.jpg) ;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    height: 200px;   
+}
+
+.sign{
+    width: 20%;
+    float: left;
+}
+.logo {
+    padding-left: 40px;
+}
+
+.title{
+    padding-left: 10px;
+}
+
+.title h2 a{
+    text-decoration: none;
+    color:  rgb(233, 233, 233);
+}
+
+nav{
+    float: left;
+    width: 80%;
+}
+
+.navlist{
+    list-style: none;
+    margin-left: 10%;
+}
+
+.navlist li{
+    float: left;
+    height: 25px;
+    width: 190px;
+    margin-top: 5px;
+}
+
+#active{
+    background-color: white;
+    color: black;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    display: inline; 
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+.navlist li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.navlist ul {
+    visibility: hidden;
+    list-style: none;
+}
+
+.navlist li:hover ul{
+    visibility: visible;
+}
+
+.navlist li ul li a{
+    text-decoration: none;
+}
+
+/*.............................................................................*/
+
+.listbuttons{
+    height: 30px;
+    position: relative;
+    width: 36%;
+    left: 24%;
+    padding-top: 3px;
+}
+
+.listbuttons button{
+    width: 24%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    color:  rgb(233, 233, 233);
+}
+
+#searchbar{
+    background-color: transparent;
+    position: relative;
+    margin-left: 68%;
+    top: 3.1%;
+}
+/*
+#searchlogo img{
+	background-color: transparent;
+	width: 20px;
+	position: relative;
+	top: 4%;
+	margin-left: 18%;
+}
+*/
+
+.lists{
+    background-color: rgb(233, 233, 233);
+    width: 54%;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    left: 23%;
+}
+
+.coursetable, .trainerspercoursetable{
+    width: 100%;
+    height: 100%;
+}
+
+.trainertable, .studentspercoursetable{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 100%;
+}
+
+.studenttable, .assignmentspercoursetable{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 200%;
+}
+
+.assignmenttable, .assignmentsperstudenttable{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 300%;
+}
+
+#coursetitle, #trainertitle, #studenttitle, #assignmenttitle, #trainerspercoursetitle, #studentspercoursetitle, #assignmentspercoursetitle, #assignmentsperstudenttitle{
+    text-align: center;
+    height: 30px;
+    padding-top: 15px;
+}
+
+.form{
+    width: 100%;
+    height: 570px;
+}
+
+.coursetable1, .trainertable1, .studenttable1, #asstable1, .trainerspercoursetable1, .studentspercoursetable1, #asspcotable1{
+    border: solid rgb(110, 93, 93) 2px;
+    width: 80%;
+    height: 60%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+#asspstudtable1{
+    border: solid rgb(110, 93, 93) 2px;
+    width: 90%;
+    height: 60%;
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+
+#asstable1, #asspcotable1, #asspstudtable1{
+    overflow: scroll;
+}
+
+.assignmenttable1, .assignmentspercoursetable1, .assignmentsperstudenttable1{ 
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}   
+
+.coursetable2, .trainertable2, .studenttable2, .assignmenttable2, .trainerspercoursetable2, .studentspercoursetable2, .assignmentspercoursetable2{
+    border: solid rgb(110, 93, 93) 2px;
+    width: 80%;
+    height: 5%;
+    position: relative;
+    left: 10%;
+    top: 15%;
+}
+
+.assignmentsperstudenttable2{
+    border: solid rgb(110, 93, 93) 2px;
+    width: 90%;
+    height: 5%;
+    position: relative;
+    left: 3%;
+    top: 15%;
+}
+
+.assignmenttable1 td, .assignmentspercoursetable1, .assignmentsperstudenttable1{
+    white-space: pre-line;
+}
+
+.borderline{
+    box-shadow: 0 1px 0 rgb(110, 93, 93);
+}
+
+.coursetable, .trainerspercoursetable{
+	visibility: visible;
+}
+
+#courses, #trainerspercourse{
+    border: outset;
+}
+
+.trainertable, .studenttable, .assignmenttable, .studentspercoursetable, .assignmentspercoursetable, .assignmentsperstudenttable{
+	visibility: hidden;
+}
+
+.edit {
+    width: 50px;
+    position: relative;
+    top: 11%;
+    right: 35%;
+}
+
+.add{
+    width: 50px;
+    position: relative;
+    top: 16%;
+    right: 35% ;
+}
+
+.submit{
+    width: 80px;
+    position: relative;
+    top: 13%;
+    left: 31%;
+}
+
+
+
+
+/* footer{
+    text-align: center;
+    color:  rgb(233, 233, 233);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 670px;
+    height: 30px;
+} */
+

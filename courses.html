@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="shortcut icon" href="images/logo2.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="sign">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+            </div>
+            <div class="title">
+                <h2><a href="index.html">Programming Force</a></h2>
+            </div>
+        </div>
+        <nav>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lists.html">Lists</a>
+                    <ul>
+                        <li><a href="lists.html#courses" onclick="listCourses()">Courses</a></li>
+                        <li><a href="lists.html#trainers" onclick="listTrainers()">Trainers</a></li>
+                        <li><a href="lists.html#students" onclick="listStudents()">Students</a></li>
+                        <li><a href="lists.html#assignments" onclick="listAssignments()">Assignments</a></li>
+                    </ul>
+                </li>
+                <li><a href="courses.html" id="active">Course</a>
+                    <ul>
+                        <li><a href="#trainerspercourse" onclick="listTrainerspercourse()">Trainers per course</a></li>
+                        <li><a href="#studentspercourse" onclick="listStudentspercourse()">Students per course</a></li>
+                        <li><a href="#assignmentspercourse" onclick="listAssignmentspercourse()">Assignments per course</a></li>
+                        <li><a href="#assignmentsperstudent" onclick="listAssignmentsperstudent()">Assignments per student per course</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="searchbar">
+        <input type="text" placeholder=" Search..">
+    </div>
+
+    <div class="listbuttons">
+        <button id="trainerspercourse" onclick="listTrainerspercourse()">trainers per
+            course</button>
+        <button id="studentspercourse" onclick="listStudentspercourse()">Students per course</button>
+        <button id="assignmentspercourse" onclick="listAssignmentspercourse()">Assignments per course</button>
+        <button id="assignmentsperstudent" onclick="listAssignmentsperstudent()">Assignments per student</button>
+    </div>
+    <section class="lists">
+        <div class="trainerspercoursetable">
+            <h1 id="trainerspercoursetitle">Trainers per Course</h1>
+            <form class="form" name="form4" onsubmit="return f4Validation()">
+                <table class="trainerspercoursetable1">
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Title</th>
+                        <th>Stream</th>
+                        <th>Type</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Aliki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Vougiouklaki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Valentino</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Rossi</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Georgios</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Karagkounis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">JavaScript</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Part time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Natalia</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Germanou</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Python</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Stefanos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Tsitsipas</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Jason</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Statham</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="edit" onclick="editlist(this)">Edit</button><br>
+
+                <table class="trainerspercoursetable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="name" placeholder=" first name" name="firstname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="name" placeholder=" second name" name="lastname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" title" name="title" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" stream" name="stream" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="type" placeholder=" type" name="type" maxlength="15"></label></td>
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="studentspercoursetable">
+            <h1 id="studentspercoursetitle">Students per Course</h1>
+            <form class="form"  name="form5" onsubmit="return f5Validation()">
+                <table class="studentspercoursetable1">
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Title</th>
+                        <th>Stream</th>
+                        <th>Type</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Manos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Xatzidakis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Mixalis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Xatzigiannis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Maria</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Kallas</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Georgio</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Armani</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Efi</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Thodi</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">JavaScript</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Part time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Maria</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Sarapova</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">JavaScript</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Part time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Selena</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Gomez</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Python</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Alkinoos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Ioanidis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Python</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Olga</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Farmaki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Thanasis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Veggos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Vasiliki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Laskaraki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Petros</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Filippidis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="edit" onclick="editlist()">Edit</button><br>
+
+                <table class="studentspercoursetable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="name" placeholder=" first name" name="firstname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="name" placeholder=" last name" name="lastname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" title" name="title" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" stream" name="stream" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="type" placeholder=" type" name="type" maxlength="15"></label></td>
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="assignmentspercoursetable">
+            <h1 id="assignmentspercoursetitle">Assignments per Course</h1>
+            <form class="form" name="form6" onsubmit="return f6Validation()">
+                <div id="asspcotable1">
+                    <table class="assignmentspercoursetable1">
+                        <tr>
+                            <th>Title</th>
+                            <th>Course title</th>
+                            <th>Stream</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB12</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB12</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB12</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                         	   <div class="editcontent" contenteditable="false">Assignment </div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">CB12</div>
+                        	</td>
+                       		 <td>
+                       		     <div class="editcontent" contenteditable="false">C#</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Full time</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB12</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB12</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                            	<div class="editcontent" contenteditable="false">Assignment </div>
+                        	</td>
+                        	<td>
+                            	<div class="editcontent" contenteditable="false">CB11</div>
+                        	</td>
+                        	<td>
+                            	<div class="editcontent" contenteditable="false">JavaScript</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Part time</div>
+                        	</td>
+                        	<td>
+                            	<div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB11</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">JavaScript</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Part time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB11</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">JavaScript</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Part time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Assignment </div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">CB11</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Python</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Full time</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB11</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Python</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB11</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Python</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Assignment </div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">CB10</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Java</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Full time</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB10</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB10</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                            	<div class="editcontent" contenteditable="false">Assignment </div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">CB10</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">C#</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Full time</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB10</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project </div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">CB10</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Full time</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                <button type="button" class="edit" onclick="editlist()">Edit</button><br>
+
+                <table class="assignmentspercoursetable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" title" name="title" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" course title" name="cotitle" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" stream" name="stream" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="type" placeholder=" type" name="type" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" placeholder=" description" name="description" maxlength="30"></label>
+                        </td>
+
+
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="assignmentsperstudenttable">
+            <h1 id="assignmentsperstudenttitle">Assignments per Student</h1>
+            <form class="form" name="form7" onsubmit="return f7Validation()">
+                <div id="asspstudtable1">
+                    <table class="assignmentsperstudenttable1">
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Title</th>
+                            <th>Stream</th>
+                            <th>Oral mark</th>
+                            <th>Total mark</th>
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Manos</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Xatzidakis</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Mixalis</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Xatzigiannis</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                             <div class="editcontent" contenteditable="false">Maria</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Kallas</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Georgio</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Armani</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Efi</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Thodi</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">JavaScript</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                 <div class="editcontent" contenteditable="false">Maria</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Sarapova</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">JavaScript</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Selena</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Gomez</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Python</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Alkinoos</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Ioanidis</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Python</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Olga</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Farmaki</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Thanasis</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Veggos</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Vasiliki</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Laskaraki</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Petros</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">Filippidis</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment</div>
+                            </td>
+                            <td rowspan="3">
+                                <div class="editcontent" contenteditable="false">C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr class="borderline">
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project</div>
+                            </td>
+							<td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button type="button" class="edit" onclick="editlist()">Edit</button><br>
+
+                <table class="assignmentsperstudenttable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="name" placeholder=" first name" name="firstname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="name" placeholder=" last name" name="lastname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" title" name="title" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" stream" name="stream" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="int" placeholder=" oral mark" name="oral" maxlength="3"></label></td>
+                        <td><label>Insert: <input type="text" class="int" placeholder=" total mark" name="total" maxlength="3"></label></td>
+                        <td><label>Insert: <input type="text" placeholder=" description" name="description" maxlength="30"></label>
+                        </td>
+
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- <footer>
+        <p>Copyright &copy; 2020 </p>
+    </footer> -->
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+
+
+</html>

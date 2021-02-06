@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <link rel="shortcut icon" href="images/logo2.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="sign">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+            </div>
+            <div class="title">
+                <h2><a href="index.html">Programming Force</a></h2>
+            </div>
+        </div>
+        <nav>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lists.html" id="active">Lists</a>
+                    <ul>
+                        <li><a href="#courses" onclick="listCourses()">Courses</a></li>
+                        <li><a href="#trainers" onclick="listTrainers()">Trainers</a></li>
+                        <li><a href="#students" onclick="listStudents()">Students</a></li>
+                        <li><a href="#assignments" onclick="listAssignments()">Assignments</a></li>
+                    </ul>
+                </li>
+                <li><a href="courses.html">Course</a>
+                    <ul>
+                        <li><a href="courses.html#trainerspercourse" onclick="listTrainerspercourse()">Trainers per course</a></li>
+                        <li><a href="courses.html#studentspercourse" onclick="listStudentspercourse()">Students per course</a></li>
+                        <li><a href="courses.html#assignmentspercourse" onclick="listAssignmentspercourse()">Assignments per course</a></li>
+                        <li><a href="courses.html#assignmentsperstudent" onclick="listAssignmentsperstudent()">Assignments per student per course</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    
+    <div id="searchbar">
+        <input type="text" placeholder=" Search..">
+    </div>
+	
+    <div class="listbuttons">
+        <button id="courses" onclick="listCourses()">Courses</button>
+        <button id="trainers" onclick="listTrainers()">Trainers</button>
+        <button id="students" onclick="listStudents()">Students</button>
+        <button id="assignments" onclick="listAssignments()">Assignments</button>
+    </div>
+    
+    <section class="lists">
+        <div class="coursetable">
+            <h1 id="coursetitle">Course's List</h1>
+            <form class="form" name="form" onsubmit="return fValidation()">
+                <table class="coursetable1">
+                    <tr>
+                        <th>Title</th>
+                        <th>Stream</th>
+                        <th>Type</th>
+                        <th>Starting Date</th>
+                        <th>Ending Date</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/10/2020</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/01/2021</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB12</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/10/2020</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/01/2021</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">JavaScript</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Part time</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">25/03/2020</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">25/09/2021</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB11</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Python</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">25/03/2020</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">25/06/2021</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/10/2019</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/01/2020</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">CB10</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Full time</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/10/2019</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/01/2020</div>
+                        </td>
+                    </tr>
+
+                </table>
+                <button type="button" class="edit" onclick="editlist(this)">Edit</button><br>
+
+                <table class="coursetable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="title" placeholder="title" name="title" maxlength="15" ></label></td>
+                        <td><label>Insert: <input type="text" class="stream" placeholder=" stream" name="stream" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="type" placeholder=" type" name="type" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="date" class="startdate" name="stardingdate"></label></td>
+                        <td><label>Insert: <input type="date" class="enddate" name="endingdate"></label></td>
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="trainertable">
+            <h1 id="trainertitle">Trainer's List</h1>
+            <form class="form" name="form1" onsubmit="return f1Validation()">
+                <table class="trainertable1">
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Subject</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Aliki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Vougiouklaki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Stefanos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Tsitsipas</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Java</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Valentino</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Rossi</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Jason</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Statham</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">C#</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Georgios</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Karagkounis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">JavaScript</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Natalia</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Germanou</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Python</div>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="edit">Edit</button><br>
+
+                <table class="trainertable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="fname" placeholder=" first name" name="firstname" maxlength="15" onsubmit="return nameValidation()"></label></td>
+                        <td><label>Insert: <input type="text" class="lname" placeholder=" last name" name="lastname" maxlength="15" onsubmit="return nameValidation()"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" subject" name="subject" maxlength="15" onsubmit="return nameValidation()"></label></td>
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="studenttable">
+            <h1 id="studenttitle">Students's List</h1>
+            <form class="form" name="form2" onsubmit="return f2Validation()">
+                <table class="studenttable1">
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Date of Birth</th>
+                        <th>Tuition Fees</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Manos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Xatzidakis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">30/05/2002</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Mixalis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Xatzigiannis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">22/07/1980</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Maria</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Kallas</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">04/11/1995</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Georgio</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Armani</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">14/01/1990</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Efi</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Thodi</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">24/05/2001</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Maria</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Sarapova</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">14/02/1995</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Selena</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Gomez</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">27/06/1994</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Alkinoos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Ioanidis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">23/05/1990</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Olga</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Farmaki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">12/03/1999</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Thanasis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Veggos</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">06/08/1992</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Vasiliki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Laskaraki</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">20/02/1998</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Petros</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">Filippidis</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">02/02/2001</div>
+                        </td>
+                        <td>
+                            <div class="editcontent" contenteditable="false">2500</div>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="edit" onclick="editlist()">Edit</button><br>
+
+                <table class="studenttable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="name" placeholder=" first name" name="firstname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" last name" name="lastname" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="date" name="dob"></label></td>
+                        <td><label>Insert: <input type="text" class="int" placeholder=" tuition fees" name="tf" maxlength="15"></label></td>
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="assignmenttable">
+            <h1 id="assignmenttitle">Assignment's List</h1>
+            <form class="form" name="form3" onsubmit="return f3Validation()">
+                <div id="asstable1">
+                    <table class="assignmenttable1">
+                        <tr>
+                            <th>Title</th>
+                            <th>Submittion Date</th>
+                            <th>Oral mark</th>
+                            <th>Total mark</th>
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Assignment Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">05/12/2020</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">30/12/2020</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">10/01/2021</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Assignment C#</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">05/12/2020</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">30/12/2020</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">10/01/2021</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Assignment JavaScript</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">25/05/2020</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project JavaScript</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">30/07/2020</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project JavaScript</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">30/08/2021</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Assignment Python</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">05/05/2020</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project Python</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">30/05/2020</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project Python</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">10/06/2021</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Assignment Java</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">05/05/2020</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">30/05/2020</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project Java</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">10/06/2021</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+						<tr>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Assignment C#</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">05/05/2020</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">100</div>
+                        	</td>
+                        	<td>
+                        	    <div class="editcontent" contenteditable="false">Create an Abstract class</div>
+                        	</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Individual Project C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">30/05/2020</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a private school</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="editcontent" contenteditable="false">Team Project C#</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">10/06/2021</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false">100</div>
+                            </td>
+                            <td>
+                                <div class="editcontent" contenteditable="false"> Create a web site</div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                <button type="button" class="edit" onclick="editlist()">Edit</button><br>
+
+                <table class="assignmenttable2">
+                    <tr>
+                        <td><label>Insert: <input type="text" class="text" placeholder=" title" name="title" maxlength="15"></label></td>
+                        <td><label>Insert: <input type="date" name="subdate"></label></td>
+                        <td><label>Insert: <input type="text" class="int" placeholder=" oral mark" name="oral" maxlength="3"></label></td>
+                        <td><label>Insert: <input type="text" class="int" placeholder=" total mark" name="total" maxlength="3"></label></td>
+                        <td><label>Insert: <input type="text" placeholder=" description" name="description" maxlength="30"></label></td>
+                        
+
+                    </tr>
+                </table>
+
+                <button type="submit" class="add">Add</button><br>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+
+        </div>
+
+
+
+
+    </section>
+    <!-- <footer>
+        <p>Copyright &copy; 2020 </p>
+    </footer> -->
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+
+
+</html>
